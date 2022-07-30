@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+     <title> office supplies</title>
+</head>
+
+<style>
+   .officesupplies{
+      height:90%;
+      width:100%;
+      margin-left:420px;
+      margin-top:100px;
+   }
+   .title{
+margin:0px;
+padding:0px;
+margin-top:-150px;
+
+}
+
+
+.title h2{
+width:100%;
+height:100px;
+margin-left:420px;
+font-size:20px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+line-height:300px;
+word-spacing:4px;
+}
+.title hr{
+width:70%;
+margin-left:420px;
+margin-top:62px;
+color:black;
+}
+.morecategories{
+margin-left:420px;
+position:relative;
+
+}
+
+.handmadesthings{
+display:inline-block;
+padding-left:30px;
+margin-top:110px;
+position:relative;
+
+
+}
+
+.handmadesthings p{
+font-size:16px;
+}
+
+
+.handmadesthings p:hover{
+cursor:pointer;
+color:red;
+
+}
+.middlepart{
+   width:100%;
+   height:10px;
+   margin-top:-40px;
+   position:relative;
+  
+}
+.sortby{
+   width:200px;
+   margin-left:800px;
+   margin-top:80px;
+  
+}
+#sel0Categories{
+   width:130px;
+   height:30px;
+   font-size:14px;
+   border:1px solid #d1cece;
+}
+.showsizes{ 
+    width:130px;
+   margin-left:1030px;
+   margin-top:-28px;
+ 
+ 
+}
+#selectCategories{
+   width:50px;
+   height:30px;
+   font-size:15px;
+   border:1px solid #d1cece;
+ 
+} 
+.comparing{
+   float:right;
+  width:160px;
+  height:100px;
+  margin-top:-30px;
+  margin-right:24px;
+
+}
+
+.compare{
+   width:150px;
+   height:30px;
+   font-size:14px;
+    top:-90px;
+   border:1px solid #d1cece;
+}
+.compare:hover{
+   background-color: red;
+cursor:pointer;
+color:white;
+}
+
+.searchbutton{
+   float:left;
+ width:21%;
+ height:7%;
+ margin-left:80px;
+ margin-top:-570px;
+ position:relative;
+border:1px solid  #d1cece;
+
+}
+.searchbutton h4{
+
+   width:100%;
+   height:10px;
+   margin-left:20px;
+   font-size:25px;
+   margin-top:35px;
+   position:relative;
+  
+
+   
+   
+}
+.searchbutton h3{
+   margin-left:19px;
+
+}
+.searchtrm{
+   width:230px;
+   height: 40px;
+   margin-left:20px;
+   border: 1px solid rgb(181, 182, 184);
+   outline-color: initial !important;
+    outline-style: none !important;
+}
+.searchbutton i{
+   margin-left:-40px;
+
+}
+
+.searchbutton ul{
+   list-style:none;
+   padding:20px 20px;
+   border:none;
+
+}
+.searchbutton ul i{
+   float:right;
+   margin-top:-20px;
+}
+
+
+
+.images{
+   width:100%;
+   height:50%;
+   margin-left:400px;
+   margin-top:100px;
+   position:relative;
+  
+}
+
+
+.images img{
+   height:90%;
+   width:70%;
+   padding-right:50px;
+   
+
+}
+
+.imgcup{
+    margin-right:-70px;
+   display:inline-block;
+
+}
+.imgcup:hover {
+   
+   border-color:white;
+   cursor: pointer;
+ }
+
+.imgcup h4{
+
+   margin-left:20px;
+}
+.imgcup h4:hover{
+  cursor:pointer;
+  color:red;
+}
+.madechina{
+   margin-left:15px;
+   margin-top:-1040px;
+   position:relative;
+ 
+}
+</style>
+    <body>
+        <header>
+            <div class="header_wrapper" >
+                <div class ="top">
+               
+                    <b>Welcome to Rasb Mart Online Site!</b>
+                   Subscribe our newsletter to be updated on every new products.
+                </div>
+                
+                     <div class="icon">
+                        <img src="images/app.png"height="35px" weidth="90px"></img>
+                        <img src="images/google.png"height="35px" weidth="90px"></img>
+                     </div>
+             
+                     <div class="subimage">
+        
+                         <div class="logo">
+                             
+                          <img src="Icons/Rasb Mart png (2).png"height="120" width="185"></img> 
+                           </div>
+                        
+        
+                           <!-- --------------for all categories,keyword here and search-------------- -->
+                         <div class="search">
+                    
+                        <select id ="selCategories" class="searchcategories"name=" "required>
+                          <option value="All Categories"class="searchcategories">All Categories</option>
+                        <option value ="Entertainment">Toys and video games</option>
+                        <option value ="house" >House utensils</option>
+                    </select>
+                   <input type="text"class="searchterm" name=""placeholder="keyword here.....">
+                    <button type="submit" class="searchbtn">
+                      <i class="fa fa-search"></i>
+                   </button>
+                
+                   </div>
+            
+                        <!--  -------------adding the icon refresh,heart and wallet------------- -->
+                           <div class="smallicon">
+                       
+                     <img src="icons/refresh.png"height="50"></img>
+                     <img src="icons/heart.png"height="55" ></img>
+                     <img src="icons/Wallet.png"height="44"width="47"><b>MY CART</b> -Rs.0 </img>
+                     </div>
+        
+                     </div>
+                     
+                       <!-- ........For navigation bar....................... -->
+                          <div class="nav bar">
+                            <ul>
+                               <br> <button color=white><a href="index.html"><b><img src="icons/home.png"
+                                   height=15 weidth=15 ></img> HOME</b> </a>
+                                </button>
+        
+                                <button color= white><a href ="login.html"><b> <img src="icons/login.png">
+                                </img> LOGIN </b> </a></button>
+                                <button color=white><a href ="registration.html"><b><img src ="Icons/user-circle.png "
+                                    height=13 width=13></img> REGISTRATION</b></a></button>
+                                <button color=white><a href="madeinnepal.html"><b>MADE IN NEPAL</b> 
+                                </a></button> 
+                                <button><a href="help.html"><b>HELP</b><img src="icons/help.png">
+                                </img></a></button>
+                              </ul>
+                              <script></script>
+                             </div> 
+         </div>
+         <br><br><br><br><br><br><br>
+        <div class="officesupplies">
+           <img src="images/officesupplies.png" weidth="200" height="200"></img>
+        </div>
+   
+
+
+
+         
+        <div class="nepal">   
+       <div class="title">
+      <h2>OFFICE MATERIALS</h2><hr><br><br>
+       </div>
+
+         <!-- shop categories of product nepal -->
+         <div class="morecategories">
+            <div class="handmadesthings">
+                <img src="images/officesupplies1.png" weidth="135" height="120"></img>
+               <br><p>Cake</p>
+            </div>
+
+       <div class="handmadesthings">
+        <img src="images/officesupplies4.png"weidth="155" height="160"></img>
+        <br><p> Gift for her</p>
+       </div>
+
+    <div class="handmadesthings">
+        <img src="images/officesupplies5.png"weidth="155" height="140"></img>
+        <br><p> Mothers Day </p>
+    </div>
+
+    <div class="handmadesthings">
+        <img src="images/officesupplies6.png"weidth="165" height="160"></img>
+        <br><p>Raksha Bandh.</p>
+        </div>
+
+        <div class="handmadesthings">
+            <img src="images/officesupplies7.png"weidth="155" height="140"></img>
+            <br><p>Raksha Bandh.</p>
+            </div>
+
+                 
+   
+    
+
+       
+       
+   </div>
+     <!-- for the default and the sizes of products -->
+     <div class="middlepart">
+      <div class="sortby">
+<label class="control-label" for ="input-type">Sort By:</label>
+<select id ="sel0Categories" name=" "required>
+<option value="Default"class="option">Default</option>
+<option value ="Name">Name(A-Z)</option>
+ <option value ="0Name">Name(Z-A)</option>
+ <option value ="price">Price(Low>High)</option>
+ <option value ="0price">0price(High>Low)</option>
+ <option value ="Rating">Rating(Highest)</option>
+  <option value ="model">Model(A-Z)</option>
+  <option value ="0model">Model(Z-A)</option>
+  </select>
+     </div> 
+
+
+          <div class="showsizes">
+<label class="control-label" for ="input-type">Show:</label>
+<select id ="selectCategories" name=" "required>
+<option value ="size">25</option>
+ <option value ="size">50</option>
+ <option value ="size">75</option>
+ <option value ="size">100</option>
+ </select>
+     </div> 
+       <div class="comparing">
+     <button b="compare" class="compare"> Product Compare(0)</button>
+     </div>
+   </div>
+           
+       
+       <div class="searchbutton">
+        <h4>SHOP BY</h4><hr>
+            <h3> SEARCH</h3>
+            <input type="text"class="searchtrm" name=""placeholder=" "> <i class="fa fa-search"></i>
+            <!-- <button type="submit" class="searchbtn">
+             </button> -->
+       </input>
+           <table width="50">
+              <ul>
+                
+                 
+                <li class="so-filter options" data option="Handmadeshoes size" style-display:none>WASHING MACHINE</li>
+                <i class="fa fa-chevron-down"></i><br>
+                <li  class="so-filter options" data option="handicraft weight">PRICE</li>
+                <i class="fa fa-chevron-down"></i><br>
+                
+               
+                   
+              </ul>
+           </table>
+           
+       </div>
+         
+       <!-- for the product images  of the  customized product -->
+                      <div class="images">
+                       
+                            <div class="imgcup">
+
+                         <img src="images/officesupply1.png"></img><br><br>
+                         <h4> <br>Custom Logo<br>Printed Cap<br>Office Cap<br>
+                           <p style="color:red;">Rs 250</p></h4><br>
+                           </div>
+                           
+                            <div class="imgcup">
+                         <img src="images/officesupplyf2.png"></img><br><br>
+                         <br><br><h4>Promotional Pen<br>Print Custom <br>printed Ball<br>Pens<br>
+                           <p style="color:red;">Rs 425</p></h4>
+                           </div>
+
+
+                           <div class="imgcup">
+                           <img src="images/officesupply3.png"></img><br><br>
+                           <h4> POLO Fabrics<br>T-shirt<br>100% Polyster<br>
+                             <p style="color:red;">Rs 1,250</p></h4><br>
+                             </div>
+
+
+                             <div class="imgcup">
+                             <img src="images/officesupply4.png"></img><br><br>
+                             <h4>POLO Fabrics T-shirt<br>Cotton And<br>Polyster Mix<br>
+                               <p style="color:red;">Rs 800</p></h4><br>
+                               </div>
+
+
+                               <div class="imgcup">
+                               <img src="images/officesupply5.png"></img><br><br>
+                               <h4> <br>Kangaroo<br> SR-500<br>Heavy Duty Staple<br>Remover<br>
+                                 <p style="color:red;">Rs 350</p></h4><br>
+                                 </div>
+
+
+                                 <div class="imgcup">
+                                 <img src="images/officesupply6.png"></img><br><br>
+                                 <h4>Kangaroo<br> 23/15-H<br>Stapler Pin<br> 
+                                   <p style="color:red;">Rs 1,250</p></h4><br>
+                                   </div>
+
+
+                                   <div class="imgcup">
+                                  <img src="images/officesupply7.png"></img><br><br>
+                                   <h4>Bubble Wrap <br>For Daily Packing<br>10 Meter<br>
+                                     <p style="color:red;">Rs 1,250</p></h4><br>
+                                     </div>
+
+
+                                     <div class="imgcup">
+                                     <img src="images/officesupply8.png"></img><br><br>
+                                     <h4> Comix Office<br>Tape Dispenser<br>Blue 24mm<br>
+                                       <p style="color:red;">Rs 1,250</p></h4><br>
+                                       </div>
+
+
+                                       <div class="imgcup">
+                                       <img src="images/officesupply9.png"></img><br><br>
+                                       <h4> Doms Y1 Plus<br>Pencil pack<br>of 10<br>Cake<br>
+                                         <p style="color:red;">Rs 1,250</p></h4><br>
+                                         </div>
+
+
+                                         <div class="imgcup">
+                                         <img src="images/officesupply10.png"></img><br><br>
+                                         <h4>Comix Name<br>Card<br>
+                                           <p style="color:red;">Rs 1650</p></h4><br>
+                                           </div>
+
+
+                                           <div class="imgcup">
+                                           <img src="images/officesupply11.png"></img><br><br>
+                                           <h4> Cobra paper<br>Document File<br>
+                                             <p style="color:red;">Rs 25</p></h4><br>
+                                             </div>
+
+
+                                             <div class="imgcup">
+                                             <img src="images/officesupply12.png"></img><br><br>
+                                             <h4> Custom Text<br>White forest Heart<br> Shaped Valentine<br>Cake<br>
+                                               <p style="color:red;">Rs 1,250</p></h4><br>
+                                               </div>
+
+
+                                               <div class="imgcup">
+                                               <img src="images/officesupply13.png"></img><br><br>
+                                               <h4> Custom Text<br>White forest Heart<br> Shaped Valentine<br>Cake<br>
+                                                 <p style="color:red;">Rs 1,250</p></h4><br>
+                                                 </div>
+
+
+                                                 <div class="imgcup">
+                                                 <img src="images/officesupply14.png"></img><br><br>
+                                                 <h4>Magnetic Duster<br>White <br>Board<br>
+                                                   <p style="color:red;">Rs 45</p></h4><br>
+                                                   </div>
+
+                                 
+
+
+                         </div>             
+                                                          
+
+                                                           
+                                             </div><br><br><br><br><br><br>
+   
+
+                
+           
+                    <!-- for the way of delivery -->
+                    
+                    <div class="delivery">
+                        <div class="system">
+                           <img src="images\delivery-truck.png"></img>
+                           <p font-size="20px"><h2>Swift Delivery</p>
+                              <h4>Rabsmart Delivery Express
+                        </div>
+
+
+                        <div class="system">
+                          <img src="images\orderprotection.png"></img>
+                          <p><h2>Order Protection</p>
+                          <h4>Secured Information
+                       </div>
+
+
+                       <div class="system">
+                          <img src="images\moneyback.png">
+                          <p><h2>Money Back</h2></p>
+                          Return Policy
+                         </img>
+                          </div>
+                  </div>
+                 
+
+                        <!-- for the footer of the fontend  page-->
+                  <div class="box-footer">
+                     <div class=" box-rabslogo">
+                        <img src="Icons/Rasb Mart png (2).png" weidth="100" height="160">
+                     </div>
+                 
+
+                     <div class=" box-icons">
+                        <img src="images/app.png" weidth="40" height="42">
+                     </div>
+                     <div class="box-icons">
+                        <img src="images/google.png" weidth="45" height="45">
+                     </div>
+                            
+
+                     <div class="linkpart">
+                  <div class="box-modcontent">
+                       <p style="color: #f5ecec;"> ABOUT</p>
+                  </div>
+                        <div class="details" style="color: #f5ecec;">
+                        About us<br>
+                        Affiliates<br>
+                        Gift Certificates<br>
+                        Specials<br>
+                        </div>
+
+
+                        <div class="trade">
+                           <p style="color: #f5ecec;"> TRADE SERVICES</p>
+
+                        </div>
+                        <div class="tradeservices" style="color: #f5ecec;">
+                           Sell with us<br>
+                           Advertise your<br>
+                           </div>
+
+
+                           <div class="customer-care">
+                              <p style="color: #f5ecec;">CUSTOMER CARE</p>
+                         </div>
+                               <div class="care" style="color: #f5ecec;">
+                               Contact us<br>
+                               FAQs<br>
+                               Privacy Policy<br>
+                               Support 24/7 page<br>
+                               Terms of Use<br>
+                               Return Product<br>
+                               </div>
+
+
+                               <div class="account">
+                                 <p style="color: #f5ecec;"> YOUR ACCOUNT</p>
+                            </div>
+                                  <div class="loginregister" style="color: #f5ecec;">
+                                 <button s1="login" style="color: #f5ecec;" >LOGIN</button>
+                                 <button s2="register" style="color: #f5ecec;" >REGISTER</button>
+                              </div>
+                              
+
+          <div class="update">
+            <h3 style="color: #f5ecec;"> Get updated with latest products and
+             exclusive offers on RabsMart!!!</h3><br>
+             <input type="text" class="youremail" placeholder="Your email address">
+                  <button s3="subscribe" class="sub" style="color: #f5ecec;"><b>SUBSCRIBE</button>
+                  
+                  <p style="color: #f5ecec;" class="connection">STAY CONNECTED</p>
+                  <div class="socialmedia">
+                     <a href="#" id="facebook" style="color: #f5ecec;" class="fa fa-facebook"></a>
+                     <a href="#" id="instagram" style="color: #f5ecec;" class="fa fa-instagram"></a>
+                     <a href="#" id="linkedin"  style="color: #f5ecec;"class="fa fa-linkedin"></a>
+                     <a href="#" id="twitter"  style="color: #f5ecec;"class="fa fa-twitter"></a>
+                     
+
+                  </div>
+                  </div>
+                  
+                  <!-- in the last bottom page -->
+          
+           <div class="buttom">
+             <p style="color: #f5ecec;">RabsMart Online Shopping. 2020. All Rights Reserved.</p>
+           </div>
+      </div>
+      </div>
+
+
+
+
+</body>
+</html>

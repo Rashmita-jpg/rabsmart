@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- !-- Load icon library --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src ="jquery-3.5.1.min.js"></script>
+    <title>rasbmart.com</title>
+    <style type="text/css">
+    
+
+
+    </style>
+
+    
+    
+
+</head>
+
+<body>
+    <header>
+    <div class="header_wrapper" >
+        <div class ="top">
+       
+            <b>Welcome to Rasb Mart Online Site!</b>
+           Subscribe our newsletter to be updated on every new products.
+        </div>
+        
+             <div class="icon">
+                <img src="images/app.png"height="35px" weidth="90px"></img>
+                <img src="images/google.png"height="35px" weidth="90px"></img>
+             </div>
+     
+             <div class="subimage">
+
+                 <div class="logo">
+                     
+                  <img src="Icons/Rasb Mart png (2).png"height="120" width="185"></img> 
+                   </div>
+                
+
+                   <!-- --------------for all categories,keyword here and search-------------- -->
+                 <div class="search">
+            
+                <select id ="selCategories" class="searchcategories"name=" "required>
+                  <option value="All Categories"class="searchcategories">All Categories</option>
+                <option value ="Entertainment">Toys and video games</option>
+                <option value ="house" >House utensils</option>
+            </select>
+           <input type="text"class="searchterm" name=""placeholder="keyword here.....">
+            <button type="submit" class="searchbtn">
+              <i class="fa fa-search"></i>
+           </button>
+        
+           </div>
+    
+                <!--  -------------adding the icon refresh,heart and wallet------------- -->
+                   <div class="smallicon">
+               
+             <img src="icons/refresh.png"height="50"></img>
+             <img src="icons/heart.png"height="55" ></img>
+             <img src="icons/Wallet.png"height="44"width="47"><b>MY CART</b> -Rs.0 </img>
+             </div>
+
+             </div>
+             
+               <!-- ........For navigation bar....................... -->
+                  <div class="nav bar">
+                    <ul>
+                        <button color=white><a href="index.html"><b><img src="icons/home.png"
+                           height=15 weidth=15 ></img> HOME</b> </a>
+                        </button>
+
+                        <button color= white><a href ="login.html"><b> <img src="icons/login.png">
+                        </img> LOGIN </b> </a></button>
+                        <button color=white><a href ="registration.html" ><b><img src ="Icons/user-circle.png "
+                            height=13 width=13> REGISTRATION</b></a></button>
+                        <button color=white><a href="madeinnepal.html" ><b>MADE IN NEPAL</b> 
+                        </a></button> 
+                        <button><a href="help.html"><b>HELP</b><img src="icons/help.png">
+                        </img></a></button>
+
+                      </ul>
+                      <script></script>
+                     </div> 
+                  </header>
+
+                        
+                              
+                                
+                                       <!-- Slideshow container -->
+                                            <div class="slideshow-container">
+
+                                     <!-- Full-width images with number and caption text -->
+                                             <div class="mySlides fade">
+                                             <img src="images/watch.png"  width="100%" height="40%">
+                                               </div>
+  
+                                            <div class="mySlides fade">
+                                            <img src="images/anker.png" width="100%" height="40%">
+                                               </div>
+  
+                                            <div class="mySlides fade">
+                                            <img src="images/cake.png" width="100%" height="40%">
+                                               </div>
+  
+                                       <!-- The dots/circles -->
+                                            <div style="text-align:center">
+                                            <span class="dot" onclick="currentSlide(1)"></span>
+                                            <span class="dot" onclick="currentSlide(2)"></span>
+                                            <span class="dot" onclick="currentSlide(3)"></span>
+                                                 </div>
+                                                 
+
+                                            <script type="text/javascript">
+  
+                                        //Automatic Slideshow
+                                               var slideIndex = 0;
+                                               showSlides();
+
+                                                function showSlides() {
+                                                     var i;
+                                                 var slides = document.getElementsByClassName("mySlides");
+                                                  for (i = 0; i < slides.length; i++) {
+                                                  slides[i].style.display = "none";
+                                                    }
+                                                  slideIndex++;
+                                                  if (slideIndex > slides.length) 
+                                                    {  
+                                                       slideIndex = 1
+
+                                                        }
+                                                     slides[slideIndex-1].style.display = "block";
+                                                     setTimeout(showSlides, 9000); // Change image every 9 seconds
+                                                          }
+
+                                                       var slideIndex = 1;
+                                                       showSlides(slideIndex);
+
+                                                          // Next/previous controls
+                                                        function plusSlides(n) {
+                                                         showSlides(slideIndex += n);
+                                                           }
+
+                                                   // Thumbnail image controls
+                                                         function currentSlide(n) {
+                                                          showSlides(slideIndex = n);
+                                                          }
+                                                         </script>
+
+
+                                                     <div class="shopping">
+                                                        <div class="heading">
+                                                     SHOP    BY    CATEGORIES 
+                                                   <a href="#"class="next round"height=30>&#8250;</a>
+                                                 <a href="#"class="previous round"height=30 >&#8249;</a>
+                                                <hr>
+                                                </div>
+                                                
+                                          <div class="scolumn">                          
+                                             <a href ="Customizedproduct.html"><img src="images/customied-products.png" height="170" width="170"></a><br><p>CUSTOMIZED PRODUC</p>
+                                               </div>
+  
+                                            <div class="scolumn">
+                                             <a href ="shopmadeinnepal.html"><img src="images/made-in-nepal.png"height="170" width="170"></a><br><p>MADE IN NEPAL</p>
+                                               </div>
+                                               
+                                               <div class="scolumn">
+                                                <a href ="giftandcard.html"><img src="images/calendar-keychaing.png"height="170" width="170"></a><br><p>GIFTS & CARDS </p>
+                                                   </div>
+  
+                                            <div class="scolumn">
+                                          <a href ="officesupplies.html"><img src="images/office-supply.png" height="170" width="170"></a><br><p>OFFICE SUPPLIES</p>
+                                               </div>
+
+                                               <div class="scolumn">
+                                                <a href ="booksandstationery.html"> <img src="images/books-and-stationary.png" height="170" width="160"></a><br><p>BOOKS &STATIONERY</p>
+                                                   </div>
+                                                   <div class="scolumn">
+                                                      <a href ="fashion.html"><img src="images/watch-3.png" height="170" width="170"></a><br><p>FASHION & ACCESS</p>
+                                                         </div>
+
+                                                         <div class="scolumn">
+                                                            <a href ="booksandstationery.html"><img src="images/makeup.png" height="120" width="100"></a><br><p>COSMETIC,HEALTH</p>                                                               </div>
+                                                </div>
+
+                           <!-- ...... ..................for online books................... -->
+                                             <div class="obooks">
+                                                    <div class="title" height:30><br>
+                                                        TRENDING  ON  CHOICEMANDU 
+                                              <a href="#"class="next round"height=20>&#8250;</a>
+                                            <a href="#"class="previous round"height=20 >&#8249;</a>
+                                           <hr>
+                                           </div>
+                                           
+                                            <div class="bcolumn">                          
+                                             <a href ="book1.html"><img src="images/book1.png" height="165" weidth="230"><br></a>
+                                             <h4>Wings Of Fire |<br> An Autobiography<br> By APJ Abdul Kala </p>
+                                              </h4>  <p style="color:hsla(0,100%,50%,1);">Rs 570</p>
+                                          </div>
+
+                                       <div class="bcolumn">
+                                          <a href ="book2.html"> <img src="images/book2.png"height="170" weidth="240"></a><br><h4>Unshakeable By<br> Tony Robbins<br>
+                                         </h4> <p style="color:hsla(0,100%,50%,1);">Rs 912</p>
+                                          </div>
+
+                                          <div class="bcolumn">
+                                          <a href ="book3.html"> <img src="images/book3.png"height="170" weidth="230"><br></a><h4>Unlimited Power By<br> Anthony Robbins<br>
+                                           </h4>  <p style="color:hsla(0,100%,50%,1);">Rs 912</p>
+                                              </div>
+
+                                       <div class="bcolumn">
+                                          <a href ="book4.html">  <img src="images/book4.png" height="170" weidth="240"><br></a><h4>Unleashing The Vajra<br> By SUJEEV SHAKYA<br>
+                                        </h4>  <p style="color:hsla(0,100%,50%,1);"> Rs 912</p>
+                                          </div>
+
+                                          <div class="bcolumn">
+                                             <a href ="book5.html"> <img src="images/book5.png" height="153" weidth="240"><br></a><h4> Bakhatko Nepal By<br> Bhim Bahadur Pande<br> | History
+                                            </h4> <p style="color:hsla(0,100%,50%,1);"> Rs 1,800</p>
+                                              </div>
+
+                                              <div class="bcolumn">
+                                                 <a href ="book6.html"><img src="images/book6.png" height="142" weidth="250"><br></a><h4>Paper towns<br> by John <br>Green<br>
+                                                 </h4>  <p style="color:hsla(0,100%,50%,1);"> Rs 608 </p>
+                                                    </div>
+
+                                                    <div class="bcolumn">
+                                                      <a href ="book7.html"><img src="images/book7.png" height="142" weidth="250"></a><h4>Bill Gates<br> Biography<br><br>
+                                                         </h4><p style="color:hsla(0,100%,50%,1);"> Rs 960</p>
+                                                       
+                                                          </div>
+                                       
+                                           </div>
+
+                                                          <!-- ..................for other online services............... -->
+                                                           <div class="onlineservices">
+
+                                                              <div class="services">
+                                                                 <img src="images/end-of-summer.png"height:6px weidth:20px>
+                                                              </div>
+
+                                                              <div class="services">
+                                                                 <img src="images/office-supplies.png" height:30px weidth:10px>
+                                                              </div>
+                                                           </div>
+                                                           <div class="fotter">
+
+
+                                                            <div class="company">
+                                                               <img src="images/sikhar.png" class="shikar"></img>
+                                                               </div>
+        
+        
+                                                               <div class="company">
+                                                               <img src="images/GoldStar_logo.png"></img>
+                                                              </div>
+        
+        
+                                                               <div class="company">
+                                                               <img src="images/Philips-Logo.png"></img>
+                                                               </div>
+        
+        
+                                                                  
+                                                               <div class="company">
+                                                               <img src="images/QnQ.png"></img>
+                                                               </div>
+        
+        
+                                                               <div class="company">
+                                                               <img src="images/apple-logo.png"></img>
+                                                               </div>
+
+                                                               <div class="company">
+                                                                  <img src="images/digicom-logo.png"></img>
+                                                                  </div>
+                                                                 
+                                                                         
+                                                                  <div class="company">
+                                                                     <img src="images/baltra.png" class="baltra"></img>
+                                                                     
+                                                                  </div>
+                                                                  
+                                                                  <div class="company">
+                                                                     <img src="images/caliber-logo.png" class="baltra"></img>
+                                                                     
+                                                                  </div>
+
+
+                                                                  <div class="company">
+                                                                     <img src="images/cglogo.png" class="baltra"></img>
+                                                                     
+                                                                  </div>
+
+                                                                 
+                                                                  
+   
+
+                                                                  
+        
+        
+                                                               
+        
+                                                           
+                                                           
+        
+        
+                                                            
+        
+                                                             <!-- Next and previous buttons -->
+                                                                <a class="finish" onclick="plusSlides(-1)">&#10094;</a>
+                                                                 <a class="coming" onclick="plusSlides(1)">&#10095;</a>
+                                                           
+                                                                        <br>
+                                                                       </div>
+        
+                                                                        <script>
+        
+                                                                          $(document).ready(function(){
+                                                                              $('.coming').click(function(){
+                                                                              $('.shikar').hide();
+                                                                              $('.shikar').plusSlides();
+
+                                                                             
+
+
+                                                                              
+                                                                  
+                                                                              })
+                                                                          })
+                                                                      </script>
+                                                                        
+        
+                                                                      
+                                                         
+        
+                                                         <div class="delivery">
+                                                               <div class="system">
+                                                                  <img src="images\delivery-truck.png"></img>
+                                                                  <p font-size="20px"><h2>Swift Delivery</p>
+                                                                     <h4>Rabsmart Delivery Express
+                                                               </div>
+        
+        
+                                                               <div class="system">
+                                                                 <img src="images\orderprotection.png"></img>
+                                                                 <p><h2>Order Protection</p>
+                                                                 <h4>Secured Information
+                                                              </div>
+        
+        
+                                                              <div class="system">
+                                                                 <img src="images\moneyback.png">
+                                                                 <p><h2>Money Back</h2></p>
+                                                                 <h4>Return Policy</h4>
+                                                                </img>
+                                                                 </div>
+                                                         </div>
+                                                        
+
+
+                                                         <div class="box-footer">
+                                                            <div class=" box-rabslogo">
+                                                               <img src="Icons/Rasb Mart png (2).png" weidth="100" height="160">
+                                                            </div>
+                                                        
+
+                                                            <div class=" box-icons">
+                                                               <img src="images/app.png" weidth="40" height="42">
+                                                            </div>
+                                                            <div class="box-icons">
+                                                               <img src="images/google.png" weidth="45" height="45">
+                                                            </div>
+                                                         
+
+
+                                                    <div class="linkpart">
+
+
+                                                         <div class="box-modcontent">
+                                                              <p style="color: #f5ecec;"> ABOUT</p>
+                                                         </div>
+                                                              
+
+                                                                  <div class="details" style="color: #f5ecec;">
+                                                                     About us<br>
+                                                                     Affiliates<br>
+                                                                     Gift Certificates<br>
+                                                                     Specials<br>
+
+                                                                     </div>
+
+
+                                                               <div class="trade">
+                                                                  <p style="color: #f5ecec;"> TRADE SERVICES</p>
+
+                                                               </div>
+
+
+                                                               <div class="tradeservices" style="color: #f5ecec;">
+                                                                  Sell with us<br>
+                                                                  Advertise your<br>
+                                                                  </div>
+
+
+                                                                  <div class="customer-care">
+                                                                     <p style="color: #f5ecec;">CUSTOMER CARE</p>
+                                                                </div>
+
+
+                                                                      <div class="care" style="color: #f5ecec;">
+                                                                      Contact us<br>
+                                                                      FAQs<br>
+                                                                      Privacy Policy<br>
+                                                                      Support 24/7 page<br>
+                                                                      Terms of Use<br>
+                                                                      Return Product<br>
+                                                                      </div>
+
+
+                                                                      <div class="account">
+                                                                        <p style="color: #f5ecec;"> YOUR ACCOUNT</p>
+                                                                   </div>
+
+
+                                                                         <div class="loginregister" style="color: #f5ecec;">
+                                                                        <button s1="login" style="color: #f5ecec;" >LOGIN</button>
+                                                                        <button s2="register" style="color: #f5ecec;" >REGISTER</button>
+                                                                     </div>
+                                                                     
+
+                                                 <div class="update">
+                                                   <h3 style="color: #f5ecec;"> Get updated with latest products and
+                                                    exclusive offers on RabsMart!!!</h3><br>
+                                                    <input type="email" class="youremail"  placeholder="Your email address" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$" required />
+                                                    
+                                                         <button s3="subscribe" class="sub" style="color: #f5ecec;"><b>SUBSCRIBE</button>
+                                                         
+                                                         <p style="color: #f5ecec;" class="connection">STAY CONNECTED</p>
+                                                         <div class="socialmedia">
+                                                            <a href="#" id="facebook"  class="fa fa-facebook"></a>
+                                                            <a href="#" id="instagram"  class="fa fa-instagram"></a>
+                                                            <a href="#" id="linkedin"  class="fa fa-linkedin"></a>
+                                                            <a href="#" id="twitter"  class="fa fa-twitter"></a>
+                                                            
+
+                                                         </div>
+                                                    </div>
+                                              </div>
+                                                         
+                                                 
+                                                  <div class="buttom">
+                                                    <p style="color: #f5ecec;">RabsMart Online Shopping. 2020. All Rights Reserved.</p>
+                                                  </div>
+                                        
+
+                                                         
+                                                   
+                                                 
+                                                          
+                                                             
+                                                 
+                                                          
+
+                                            
+
+                                             
+
+
+                                                       
+                                                 
+                                                
+
+                                               </div>
+                                                </body>
+                                                    </html>

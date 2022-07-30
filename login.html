@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <style>
+     *{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+    margin-top:0px;
+}
+
+.hero{
+    height:250px;
+    width:100%;
+    background:transparent;
+    background-position: center;
+    background-size:cover;
+    position:absolute;
+    margin-top:-80px;
+}
+
+.form-box{
+    width:470px;
+    height:650px;
+    position:relative;
+    margin:6% auto;
+    background-color:white;
+    padding:8px;
+    margin-top:-700px;
+    border:1px solid rgb(238, 26, 26);
+
+}
+
+    
+
+
+.Login{
+
+    width:80%;
+    height:40px;
+    font-size:21px;
+    word-spacing:3px;;
+    margin-left:70px;
+    margin-top:10px;
+    
+    
+
+}
+.Login h2{
+    margin-left:130px;
+    margin-top:10px;
+    font-family:Courier New;
+}
+.Login img{
+  margin-left:20px;
+}
+
+.email{
+    width:100%;
+      border:none;
+    outline:none;
+    font-family:Courier New;
+    font-size:17px;
+    border-bottom:1px solid rgb(85, 84, 84);
+    margin-left:8px;
+     margin-top:180px;
+    
+}
+.password{
+    width:100%;
+    border:none;
+    outline:none;
+    font-family:Courier New;
+    font-size:17px;
+    margin-top:30px;
+    margin-left:8px;
+    cursor: pointer;
+    border-bottom:1px solid rgb(85, 84, 84);
+
+}
+
+.Remember{
+    margin-left:10px;
+    margin-top:60px;
+    font-size: 17px;
+    cursor: pointer;
+    font-family:Courier New;
+    
+}
+    /* input[type=checkbox] {
+        visibility:collapse;
+       
+} */
+.check-box{
+    color:orange;
+    border:3px solid orange;
+}
+  .forget{
+      float:right;
+      margin-top:-20px;
+      margin-left:43px;
+      font-family:Courier New;
+
+  }
+  .forget button{
+      color:blue;
+      font-size:16px;
+      border:none;
+      outline:none;
+  }
+
+.login{
+    height:80px;
+    width:40px;
+    padding:10px 30px;
+    margin-top:30px;
+    
+}
+
+
+.log{
+    height:35px;
+    width:400px;
+    padding:20px 10px;
+    font-size:20px;
+    border:none;
+    outline:none;
+    font-family:Courier New;
+    line-height:8px;;
+    background-color:orange;
+}
+.log:hover{
+    cursor:pointer;
+    background: rgb(233, 175, 69);
+
+}
+.logmail{
+    height:40px;
+    width:300px;
+    font-size:18px;
+    border:none;
+    outline:none;
+    margin-top:20px;
+    margin-left:50px;
+    background-color:red;
+    font-family:Courier New;
+}
+.logmail:hover{
+    cursor:pointer;
+    background:rgb(231, 76, 76);
+
+}
+.reg{
+    width:350px;
+     height:20px;
+   margin-top:60px;
+    margin-left:60px;
+    background: transparent;
+    font-family:'Courier New';
+
+
+}
+
+.re {
+   
+    height:20px;
+    margin-right:-100px;
+    border:none;
+    outline:none;
+    font-size:16px;
+    font-family:'Courier New';
+
+    }
+    @media only screen and (min-width:768px){
+      
+.hero{
+    height:100px;
+    width:100%;
+    margin-top:-50px;
+}
+form-box{
+    width:470px;
+    height:650px;
+    margin-top:-600px;
+   
+
+}
+
+    
+
+    }
+
+
+
+   </style>
+<body>
+    <header>
+        <div class="header_wrapper" >
+            <div class ="top">
+           
+                <b>Welcome to Rasb Mart Online Site!</b>
+               Subscribe our newsletter to be updated on every new products.
+            </div>
+            
+                 <div class="icon">
+                    <img src="images/app.png"height="35px" weidth="90px"></img>
+                    <img src="images/google.png"height="35px" weidth="90px"></img>
+                 </div>
+         
+                 <div class="subimage">
+    
+                     <div class="logo">
+                         
+                      <img src="Icons/Rasb Mart png (2).png"height="120" width="185"></img> 
+                       </div>
+                    
+    
+                       <!-- --------------for all categories,keyword here and search-------------- -->
+                     <div class="search">
+                
+                    <select id ="selCategories" class="searchcategories"name=" "required>
+                      <option value="All Categories"class="searchcategories">All Categories</option>
+                    <option value ="Entertainment">Toys and video games</option>
+                    <option value ="house" >House utensils</option>
+                </select>
+               <input type="text"class="searchterm" name=""placeholder="keyword here.....">
+                <button type="submit" class="searchbtn">
+                  <i class="fa fa-search"></i>
+               </button>
+            
+               </div>
+        
+                    <!--  -------------adding the icon refresh,heart and wallet------------- -->
+                       <div class="smallicon">
+                   
+                 <img src="icons/refresh.png"height="50"></img>
+                 <img src="icons/heart.png"height="55" ></img>
+                 <img src="icons/Wallet.png"height="44"width="47"><b>MY CART</b> -Rs.0 </img>
+                 </div>
+    
+                 </div>
+                 
+                   <!-- ........For navigation bar....................... -->
+                      <div class="nav bar">
+                        <ul>
+                          <br><br>  <button color=white><a href="index.html"><b><img src="icons/home.png"
+                               height=15 weidth=15 ></img> HOME</b> </a>
+                            </button>
+    
+                            <button color= white><a href ="login.html"><b> <img src="icons/login.png">
+                            </img> LOGIN </b> </a></button>
+                            <button color=white><a href ="registration.html" ><b><img src ="Icons/user-circle.png "
+                                height=13 width=13> REGISTRATION</b></a></button>
+                            <button color=white><a href="madeinnepal.html"><b>MADE IN NEPAL</b> 
+                            </a></button> 
+                            <button><a href="help.html"><b>HELP</b><img src="icons/help.png">
+                            </img></a></button>
+                          </ul>
+                          <script></script>
+                         </div> 
+     </div>
+    <img src="images/images (1).png" height=800 weidth=100></img>
+   <div class="hero">
+     <div class="form-box">
+        <!----------------------------------- for login form--------------------->
+                    <div class="Login">
+                        <img src="Icons/Rasb Mart png (2).png" width=210 height=125></img>
+                    <h2> LOGIN  </h2>
+                          </div>
+                             <form id="login" class="fillup">
+                              <input type="text"class="email" placeholder="Email Address" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$"  autocomplete="off"required />
+                        
+                              <br><br>
+                              <input type="password" class="password" placeholder="Password" id="myInput"><br><br>
+                             
+                              
+                              <script>
+                              function myFunction() {
+                                var x = document.getElementById("myInput");
+                                if (x.type === "password") {
+                                  x.type = "text";
+                                } else {
+                                  x.type = "password";
+                                }
+                              }
+                              </script>
+                  
+                               <div class="Remember">
+                              <input type="checkbox"  class="check-box"  onclick="myFunction()"><span style="font-family:'Courier New';">      Remember Me </span>
+                                      </div>
+                                  <div class="forget">
+                                          <h4><button style="font-family:'Courier New';"> Forget Password ?</h4></button>
+                                           </div>
+                      
+                         <div class="login">
+                           <button b2="login"class="log"style="color: #f5ecec;" >LOGIN</button><br>
+                           <button b3="login" class="logmail" style="color: #f5ecec;">Login With Gmail</button><br>
+                         </div>
+     
+                        <div class="reg">
+                           <p style="font-family:'Courier New';" font-size="20px"> Not registered yet?
+                              
+                  
+                            <a href="registration.html"class="re"> Register Here </a></p>  
+                              </div>
+
+                              
+                  
+                         </form>
+                         </div>
+                        </div>
+                    </div>
+                   
+                        
+                       
+                     
+
+
+                      <div class="box-footer">
+                         <div class=" box-rabslogo">
+                            <img src="Icons/Rasb Mart png (2).png" weidth="100" height="160">
+                         </div>
+                     
+
+                         <div class=" box-icons">
+                            <img src="images/app.png" weidth="40" height="42">
+                         </div>
+                         <div class="box-icons">
+                            <img src="images/google.png" weidth="45" height="45">
+                         </div>
+                      
+
+
+                         <div class="linkpart">
+                      <div class="box-modcontent">
+                           <p style="color: #f5ecec;"> ABOUT</p>
+                      </div>
+                            <div class="details" style="color: #f5ecec;">
+                            About us<br>
+                            Affiliates<br>
+                            Gift Certificates<br>
+                            Specials<br>
+                            </div>
+
+
+                            <div class="trade">
+                               <p style="color: #f5ecec;"> TRADE SERVICES</p>
+
+                            </div>
+                            <div class="tradeservices" style="color: #f5ecec;">
+                               Sell with us<br>
+                               Advertise your<br>
+                               </div>
+
+
+                               <div class="customer-care">
+                                <p style="color: #f5ecec;">CUSTOMER CARE</p>
+                             </div>
+                                   <div class="care" style="color: #f5ecec;">
+                                  Contact us<br>
+                                   FAQs<br>
+                                   Privacy Policy<br>
+                                   Support 24/7 page<br>
+                                   Terms of Use<br>
+                                   Return Product<br>
+                                   </div>
+
+
+                                   <div class="account">
+                                     <p style="color: #f5ecec;"> YOUR ACCOUNT</p>
+                                </div>
+                                      <div class="loginregister" style="color: #f5ecec;">
+                                     <button s1="login" style="color: #f5ecec;" >LOGIN</button>
+                                     <button s2="register" style="color: #f5ecec;" >REGISTER</button>
+                                  </div>
+                                  
+
+              <div class="update">
+                <h3 style="color: #f5ecec;"><br> Get updated with latest products and
+                 exclusive offers on RabsMart!!!</h3><br>
+                 <input type="text" class="youremail" placeholder="Your email address">
+                      <button s3="subscribe" class="sub" style="color: #f5ecec;"><b>SUBSCRIBE</button>
+                      
+                      <p style="color: #f5ecec;" class="connection">STAY CONNECTED</p>
+                      <div class="socialmedia"><br>
+                         <a href="#" id="facebook" style="color: #fcf8f8;" class="fa fa-facebook"></a>
+                         <a href="#" id="instagram" style="color: #f5ecec;" class="fa fa-instagram"></a>
+                         <a href="#" id="linkedin"  style="color: #f5ecec;"class="fa fa-linkedin"></a>
+                         <a href="#" id="twitter"  style="color: #f5ecec;"class="fa fa-twitter"></a>
+                         
+
+                      </div>
+                      </div><br>
+                      
+              
+               <div class="buttom">
+                 <p style="color: #f5ecec;">RabsMart Online Shopping. 2020. All Rights Reserved.</p>
+               </div>
+                   </div>
+                   </div>
+</body>
+</html>

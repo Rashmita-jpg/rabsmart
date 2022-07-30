@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+     <title>makeup</title>
+</head>
+
+<style>
+   .title{
+margin:0px;
+padding:0px;
+margin-top: 100px;
+
+}
+
+
+.title h2{
+width:100%;
+height:100px;
+margin-left:420px;
+font-size:24px;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+line-height:300px;
+word-spacing:4px;
+}
+.title hr{
+width:70%;
+margin-left:420px;
+margin-top:80px;
+color:black;
+}
+.morecategories{
+margin-left:420px;
+
+}
+
+.handmadesthings{
+display:inline-block;
+padding-left:20px;
+margin-top:140px;
+
+
+}
+.handmadesthings img{
+border:1px solid rgb(231, 227, 227);
+}
+.handmadesthings p{
+font-size:14px;
+}
+.handmadesthings img:hover {
+border:1px solid rgb(109, 109, 201);
+cursor: pointer;
+}
+
+.handmadesthings p:hover{
+cursor:pointer;
+color:red;
+
+}
+.middlepart{
+   width:100%;
+   height:10px;
+   margin-top:-40px;
+  
+}
+.sortby{
+   width:200px;
+   margin-left:800px;
+   margin-top:80px;
+  
+}
+#sel0Categories{
+   width:130px;
+   height:30px;
+   font-size:14px;
+   border:1px solid #d1cece;
+}
+.showsizes{ 
+    width:130px;
+   margin-left:1030px;
+   margin-top:-28px;
+ 
+ 
+}
+#selectCategories{
+   width:50px;
+   height:30px;
+   font-size:15px;
+   border:1px solid #d1cece;
+ 
+} 
+.comparing{
+   float:right;
+  width:160px;
+  height:100px;
+  margin-top:-30px;
+  margin-right:24px;
+
+}
+
+.compare{
+   width:150px;
+   height:30px;
+   font-size:14px;
+    top:-90px;
+   border:1px solid #d1cece;
+}
+.compare:hover{
+   background-color: red;
+cursor:pointer;
+color:white;
+}
+
+.searchbutton{
+   float:left;
+ width:21%;
+ height:10%;
+ margin-left:40px;
+ margin-top:-340px;
+border:1px solid  #d1cece;
+
+}
+.searchbutton h4{
+
+   width:100%;
+   height:10px;
+   margin-left:20px;
+   font-size:25px;
+   margin-top:35px;
+  
+
+   
+   
+}
+.searchbutton h3{
+   margin-left:19px;
+
+}
+.searchtrm{
+   width:230px;
+   height: 40px;
+   margin-left:20px;
+   border: 1px solid rgb(181, 182, 184);
+   outline-color: initial !important;
+    outline-style: none !important;
+}
+.searchbutton i{
+   margin-left:-40px;
+
+}
+
+.searchbutton ul{
+   list-style:none;
+   padding:20px 20px;
+   border:none;
+
+}
+.searchbutton ul i{
+   float:right;
+   margin-top:-20px;
+}
+
+
+
+.images{
+   width:100%;
+   height:50%;
+   margin-left:400px;
+   margin-top:100px;
+   position:relative;
+  
+}
+
+
+.images img{
+   height:90%;
+   width:70%;
+   padding-right:50px;
+   
+
+}
+.imgcup{
+   margin-right:-70px;
+   display:inline-block;
+
+   
+}
+.imgcup:hover {
+   
+   border-color:white;
+   cursor: pointer;
+ }
+
+.imgcup h4{
+
+   margin-left:20px;
+}
+.imgcup h4:hover{
+  cursor:pointer;
+  color:red;
+}
+.madechina{
+   margin-left:15px;
+   margin-top:-1040px;
+   position:relative;
+ 
+}
+</style>
+    <body>
+        <header>
+            <div class="header_wrapper" >
+                <div class ="top">
+               
+                    <b>Welcome to Rasb Mart Online Site!</b>
+                   Subscribe our newsletter to be updated on every new products.
+                </div>
+                
+                     <div class="icon">
+                        <img src="images/app.png"height="35px" weidth="90px"></img>
+                        <img src="images/google.png"height="35px" weidth="90px"></img>
+                     </div>
+             
+                     <div class="subimage">
+        
+                         <div class="logo">
+                             
+                          <img src="Icons/Rasb Mart png (2).png"height="120" width="185"></img> 
+                           </div>
+                        
+        
+                           <!-- --------------for all categories,keyword here and search-------------- -->
+                         <div class="search">
+                    
+                        <select id ="selCategories" class="searchcategories"name=" "required>
+                          <option value="All Categories"class="searchcategories">All Categories</option>
+                        <option value ="Entertainment">Toys and video games</option>
+                        <option value ="house" >House utensils</option>
+                    </select>
+                   <input type="text"class="searchterm" name=""placeholder="keyword here.....">
+                    <button type="submit" class="searchbtn">
+                      <i class="fa fa-search"></i>
+                   </button>
+                
+                   </div>
+            
+                        <!--  -------------adding the icon refresh,heart and wallet------------- -->
+                           <div class="smallicon">
+                       
+                     <img src="icons/refresh.png"height="50"></img>
+                     <img src="icons/heart.png"height="55" ></img>
+                     <img src="icons/Wallet.png"height="44"width="47"><b>MY CART</b> -Rs.0 </img>
+                     </div>
+        
+                     </div>
+                     
+                       <!-- ........For navigation bar....................... -->
+                          <div class="nav bar">
+                            <ul>
+                               <br> <button color=white><a href="index.html"><b><img src="icons/home.png"
+                                   height=15 weidth=15 ></img> HOME</b> </a>
+                                </button>
+        
+                                <button color= white><a href ="login.html"><b> <img src="icons/login.png">
+                                </img> LOGIN </b> </a></button>
+                                <button color=white><a href ="registration.html"><b><img src ="Icons/user-circle.png "
+                                    height=13 width=13></img> REGISTRATION</b></a></button>
+                                <button color=white><a href="madeinnepal.html"><b>MADE IN NEPAL</b> 
+                                </a></button> 
+                                <button><a href="help.html"><b>HELP</b><img src="icons/help.png">
+                                </img></a></button>
+                              </ul>
+                              <script></script>
+                             </div> 
+         </div>
+
+   
+
+
+
+
+        <div class="nepal">   
+       <div class="title">
+      <h2>MAKEUP</h2><hr><br><br>
+       </div>
+
+         <!-- shop categories of product nepal -->
+         <div class="morecategories">
+            <div class="handmadesthings">
+                <img src="images/makeup1.png" weidth="105" height="100"></img>
+               <br><p>Makeup</p>
+            </div>
+         
+
+            <div class="handmadesthings">
+              <img src="images/makeup2.png"weidth="105" height="100"></img>
+              <br><p>Perfume</p>
+          </div>
+          
+
+          
+          <div class="handmadesthings">
+            <img src="images/makeup3.png"weidth="105" height="100"></img>
+            <br><p>Skin Care</p>
+        </div>
+        
+
+
+        
+       
+       
+   </div>
+     <!-- for the default and the sizes of products -->
+     <div class="middlepart">
+      <div class="sortby">
+<label class="control-label" for ="input-type">Sort By:</label>
+<select id ="sel0Categories" name=" "required>
+<option value="Default"class="option">Default</option>
+<option value ="Name">Name(A-Z)</option>
+ <option value ="0Name">Name(Z-A)</option>
+ <option value ="price">Price(Low>High)</option>
+ <option value ="0price">0price(High>Low)</option>
+ <option value ="Rating">Rating(Highest)</option>
+  <option value ="model">Model(A-Z)</option>
+  <option value ="0model">Model(Z-A)</option>
+  </select>
+     </div> 
+
+
+          <div class="showsizes">
+<label class="control-label" for ="input-type">Show:</label>
+<select id ="selectCategories" name=" "required>
+<option value ="size">25</option>
+ <option value ="size">50</option>
+ <option value ="size">75</option>
+ <option value ="size">100</option>
+ </select>
+     </div> 
+       <div class="comparing">
+     <button b="compare" class="compare"> Product Compare(0)</button>
+     </div>
+   </div>
+           
+       
+       <div class="searchbutton">
+        <h4>SHOP BY</h4><hr>
+            <h3> SEARCH</h3>
+            <input type="text"class="searchtrm" name=""placeholder=" "> <i class="fa fa-search"></i>
+            <!-- <button type="submit" class="searchbtn">
+             </button> -->
+       </input>
+           <table width="50">
+              <ul>
+                
+                   <li class="so-filter options" data option="Handmadeshoes size" style-display:none>FIT ME SHADES</li>
+                   <i class="fa fa-chevron-down"></i><br>
+                   <li  class="so-filter options" data option="handicraft weight">HAIR COLORS</li>
+                   <i class="fa fa-chevron-down"></i><br>
+                   <li class="so-filter options" data option="colors">PANSTICK</li>
+                   <i class="fa fa-chevron-down"></i><br>
+                   <li class="so-filter options" data option="colors">CORRECTOR</li>
+                   <i class="fa fa-chevron-down"></i><br>
+                   <li class="so-filter options" data option="colors">COMPACT POWDER</li>
+                   <i class="fa fa-chevron-down"></i><br>
+                   <li class="so-filter options" data option="colors">NAIL COLORS</li>
+                   <i class="fa fa-chevron-down"></i><br>
+                   <li class="so-filter options" data option="colors"> MANUFACTURE</li>
+                   <i class="fa fa-chevron-down"></i><br>
+                   <li class="so-filter options" data option="colors">PRICE</li>
+                   <i class="fa fa-chevron-down"></i><br>
+                   
+              </ul>
+           </table>
+           
+       </div>
+             
+
+       <!-- for the product images  of the  customized product -->
+                <div class="images">
+                        <div class="imgcup">
+                        <img src="images/makeup4.png"></img><br><br>
+                        <h4>YANQINA Dear Darling<br>Water Gel Lipstick<br>Tint Ice Cream<br> 
+                           <p style="color:red;">Rs 990</p></h4><br>
+                        </div>
+                        <div class="imgcup">
+                         <img src="images/makeup5.png"></img><br><br><br>
+                         <h4>Technic Pro Finish<br>Eye-Shadow <br>Pallete<br>
+                           <p style="color:red;">Rs 990</p></h4><br>
+                           </div>
+                            <div class="imgcup">
+                         <img src="images/makeup6.png"></img><br><br><br>
+                         <h4>UMF Smoothing<br>Firming Foundation<br>30ml Get Visibly<br>Brighter&Radiant<br>
+                          <p style="color:red;">Rs 9,80</p></h4><br>
+                           </div>
+                            <div class="imgcup">
+
+                         <img src="images/makeup7.png"></img><br><br><br>
+                         <h4>UMF MOISTURIZING<br>COUSION BB CREAM<br>WITH FREE REFIL<br> Frame
+                           <p style="color:red;">Rs 2,150</p></h4><br>
+                           </div>
+                           <br>
+                            <div class="imgcup">
+                         <img src="images/makeup8.png"></img><br><br>
+                         <br><br><h4>UMF LIQUID<br>HIGHLIGHTER-20ML<br>NO.2 UMF BEAUTY<br>PRODUCTS<br>
+                           <p style="color:red;">Rs 4,500</p></h4>
+                           </div>
+
+                           <div class="imgcup">
+                              <img src="images/makeup9.png"></img><br><br>
+                              <br><br><h4>Maybelline <br>Fit Me<br>Foundation<br>
+                                 <p style="color:red;">Rs1,550</p></h4><br> 
+                                 </h4>
+                                </div>
+
+                                <div class="imgcup">
+                                 <img src="images/makeup10.png"></img><br><br>
+                                 <br><br><h4>MAYBELLINE EYE<br>LINER GEL LASTING<br>DRAMA<br>
+                                    <p style="color:red;">Rs 1,550</p></h4><br> 
+                                    </h4>
+                                   </div>
+
+
+                                   <div class="imgcup">
+                                    <img src="images/makeup11.png"></img><br><br>
+                                    <br><br><h4>LOREAL WHITE<br>PERFECT NIGHT<br>CREAM<br>
+                                       <p style="color:red;">Rs 750</p></h4><br> 
+                                       </h4>
+                                      </div>
+                                      <br>
+
+                                      
+                                      <div class="imgcup">
+                                       <img src="images/makeup12.png"></img><br><br>
+                                       <br><br><h4>Loreal Setting<br>Makeup<br>Spray<br>
+                                          <p style="color:red;">Rs 1,700</p></h4><br> 
+                                          </h4>
+                                         </div>
+
+                                         
+                                         <div class="imgcup">
+                                          <img src="images/makeup13.png"></img><br><br>
+                                          <br><br><h4>LOREAL LA PALETTE<br>NUDE<br>Eyeshadow<br>
+                                             <p style="color:red;">Rs 1,950</p></h4><br> 
+                                             </h4>
+                                            </div>
+
+                                            
+                                            <div class="imgcup">
+                                             <img src="images/makeups13.png"></img><br><br>
+                                             <br><br><h4>Layer's Wottagirl <br>Magic Perfume Spray<br>-Red 100ml<br>
+                                                <p style="color:red;">Rs 959</p></h4><br> 
+                                                </h4>
+                                               </div>
+
+                                               
+                                                                                                 
+                                                  <div class="imgcup">
+                                                   <img src="images/makeup14.png"></img><br><br>
+                                                   <br><br><h4>Reizvoll Nail Color/<br>Reizvoll<br>
+                                                      <p style="color:red;">Rs 240</p></h4><br> 
+                                                      </h4>
+                                                     </div>
+                                                     <br>
+
+                                                     
+                                                     <div class="imgcup">
+                                                      <img src="images/makeup15.png"></img><br><br>
+                                                      <br><br><h4>Reizvoll Nail Coat<br>Reizvoll Product<br>
+                                                         <p style="color:red;">Rs 325</p></h4><br> 
+                                                         </h4>
+                                                        </div>
+
+                                                        <div class="imgcup">
+                                                         <img src="images/makeup16.png"></img><br><br>
+                                                         <br><br><h4>Himilaya Herbals<br>Pure Skin Neem<br>Facial Kit<br>
+                                                            <p style="color:red;">Rs 2,65</p></h4><br> 
+                                                            </h4>
+                                                           </div>
+
+                                                           
+                                                           <div class="imgcup">
+                                                            <img src="images/makeup17.png"></img><br><br>
+                                                            <br><br><h4>Himalaya Refreshing<br>Cleasing Milk<br>100ml<br>
+                                                               <p style="color:red;">Rs 152</p></h4><br> 
+                                                               </h4>
+                                                              </div>
+
+
+                                                        <div class="imgcup">
+                                                         <img src="images/makeup18.png"></img><br><br>
+                                                         <br><br><h4>Himalayan pure<br>Expression Kajal-<br>0.30gmTracker-Waterproof<br>
+                                                            <p style="color:red;">Rs 2,60</p></h4><br> 
+                                                               </h4>
+                                                               </div>
+                                                               <br>
+                                                               <div class="imgcup">
+                                                                <img src="images/makeup19.png"></img><br><br>
+                                                                <br><br><h4>LAYER'R Shot Bullet<br>Ammo Body Perfume<br>For Men-120ml<br>Waterproof Bag
+                                                                   <p style="color:red;">Rs 206</p></h4><br> 
+                                                                      </h4>
+                                                                  
+                                                                   </div>
+                                                                   <div class="imgcup">
+                                                                    <img src="images/makeup20.png"></img><br><br>
+                                                                    <br><br><h4>LAYER'R Shot Deep<br>Desire Desire For<br>Men-135ml<br>
+                                                                       <p style="color:red;">Rs 360</p></h4><br> 
+                                                                          </h4>
+                                                                          </div>
+                                                                       
+                                                                       <div class="imgcup">
+                                                                        <img src="images/makeup21.png"></img><br><br>
+                                                                        <br><br><h4>LAYER'R Shot Power<br>Play Decodorant For<br>Men-135ml<br>
+                                                                           <p style="color:red;">Rs 360</p></h4><br> 
+                                                                              </h4>
+                                                                              </div>
+                                                                           
+                                                                           <div class="imgcup">
+                                                                            <img src="images/makeup22.png"></img><br><br>
+                                                                            <br><br><h4>Red Hunt Alpha Tribe<br>Fragrant Body<br>Spray-125ml<br>Sequins<br>
+                                                                               <p style="color:red;">Rs 440</p></h4><br> 
+                                                                                  </h4>
+                                                                                  </div>
+                                                                               </div>
+                                                            </div>
+
+                                                                           
+                                                          
+
+                                                           
+                                             </div><br><br><br><br>
+   
+
+                
+           
+                    <!-- for the way of delivery -->
+                    
+                    <div class="delivery">
+                        <div class="system">
+                           <img src="images\delivery-truck.png"></img>
+                           <p font-size="20px"><h2>Swift Delivery</p>
+                              <h4>Rabsmart Delivery Express
+                        </div>
+
+
+                        <div class="system">
+                          <img src="images\orderprotection.png"></img>
+                          <p><h2>Order Protection</p>
+                          <h4>Secured Information
+                       </div>
+
+
+                       <div class="system">
+                          <img src="images\moneyback.png">
+                          <p><h2>Money Back</h2></p>
+                          Return Policy
+                         </img>
+                          </div>
+                  </div>
+                 
+
+                        <!-- for the footer of the fontend  page-->
+                  <div class="box-footer">
+                     <div class=" box-rabslogo">
+                        <img src="Icons/Rasb Mart png (2).png" weidth="100" height="160">
+                     </div>
+                 
+
+                     <div class=" box-icons">
+                        <img src="images/app.png" weidth="40" height="42">
+                     </div>
+                     <div class="box-icons">
+                        <img src="images/google.png" weidth="45" height="45">
+                     </div>
+                  
+
+                  <div class="box-modcontent">
+                       <p style="color: #f5ecec;"> ABOUT</p>
+                  </div>
+
+                  <div class="linkpart">
+                        <div class="details" style="color: #f5ecec;">
+                        About us<br>
+                        Affiliates<br>
+                        Gift Certificates<br>
+                        Specials<br>
+                        </div>
+
+
+                        <div class="trade">
+                           <p style="color: #f5ecec;"> TRADE SERVICES</p>
+
+                        </div>
+                        <div class="tradeservices" style="color: #f5ecec;">
+                           Sell with us<br>
+                           Advertise your<br>
+                           </div>
+
+
+                           <div class="customer-care">
+                              <p style="color: #f5ecec;">CUSTOMER CARE</p>
+                         </div>
+                               <div class="care" style="color: #f5ecec;">
+                               Contact us<br>
+                               FAQs<br>
+                               Privacy Policy<br>
+                               Support 24/7 page<br>
+                               Terms of Use<br>
+                               Return Product<br>
+                               </div>
+
+
+                               <div class="account">
+                                 <p style="color: #f5ecec;"> YOUR ACCOUNT</p>
+                            </div>
+                                  <div class="loginregister" style="color: #f5ecec;">
+                                 <button s1="login" style="color: #f5ecec;" >LOGIN</button>
+                                 <button s2="register" style="color: #f5ecec;" >REGISTER</button>
+                              </div>
+                              
+
+          <div class="update">
+            <h3 style="color: #f5ecec;"> Get updated with latest products and
+             exclusive offers on RabsMart!!!</h3><br>
+             <input type="text" class="youremail" placeholder="Your email address">
+                  <button s3="subscribe" class="sub" style="color: #f5ecec;"><b>SUBSCRIBE</button>
+                  
+                  <p style="color: #f5ecec;" class="connection">STAY CONNECTED</p>
+                  <div class="socialmedia">
+                     <a href="#" id="facebook" style="color: #f5ecec;" class="fa fa-facebook"></a>
+                     <a href="#" id="instagram" style="color: #f5ecec;" class="fa fa-instagram"></a>
+                     <a href="#" id="linkedin"  style="color: #f5ecec;"class="fa fa-linkedin"></a>
+                     <a href="#" id="twitter"  style="color: #f5ecec;"class="fa fa-twitter"></a>
+                     
+
+                  </div>
+                  </div>
+                  
+                  <!-- in the last bottom page -->
+          
+           <div class="buttom">
+             <p style="color: #f5ecec;">RabsMart Online Shopping. 2020. All Rights Reserved.</p>
+           </div>
+      </div>
+      </div>
+
+
+
+
+</body>
+</html>
